@@ -13,7 +13,7 @@ struct ContentView: View {
         
         NavigationStack {
             VStack {
-                Text("Local change. Hello, world!")
+                Text("Another local change. Hello, world!")
                 Text("Goodbye, world!")
                 NavigationLink(destination: ModalView()) {
                     Text("Go Next")
