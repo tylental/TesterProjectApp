@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isClicked = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button("Open modal") {
+            isClicked.toggle()
         }
-        .padding()
+        .sheet(isPresented: $isClicked) {
+            Text("This is the modal view.")
+        }
     }
 }
 
