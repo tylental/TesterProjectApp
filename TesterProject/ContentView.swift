@@ -14,6 +14,7 @@ struct ContentView: View {
             NavigationLink(destination: ModalView()) {
                 Text("Go Next")
             }
+            .foregroundStyle(.red)
         }
     }
 }
