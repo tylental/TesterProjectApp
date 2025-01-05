@@ -13,7 +13,7 @@ struct ContentView: View {
         
         NavigationStack {
             VStack {
-                Text("Hello, world!")
+                Text("Local change. Hello, world!")
                 NavigationLink(destination: ModalView()) {
                     Text("Go Next")
                         .foregroundStyle(.blue)
