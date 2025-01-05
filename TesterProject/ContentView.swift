@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isClicked = false
     
     var body: some View {
-        Button("Open modal") {
-            isClicked.toggle()
-        }
-        .sheet(isPresented: $isClicked) {
-            Text("This is the modal view.")
+        NavigationStack {
+            NavigationLink(destination: ModalView()) {
+                Text("Go Next")
+            }
         }
     }
 }
