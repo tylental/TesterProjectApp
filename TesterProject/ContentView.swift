@@ -16,7 +16,7 @@ struct ContentView: View {
                 Text("Hello, world!")
                 NavigationLink(destination: ModalView()) {
                     Text("Go Next")
-                        .foregroundStyle(.purple)
+                        .foregroundStyle(.blue)
 
                 }
             }
