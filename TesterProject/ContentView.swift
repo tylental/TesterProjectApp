@@ -10,11 +10,16 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
+        
         NavigationStack {
-            NavigationLink(destination: ModalView()) {
-                Text("Go Next")
+            VStack {
+                Text("Hello, world!")
+                NavigationLink(destination: ModalView()) {
+                    Text("Go Next")
+                        .foregroundStyle(.purple)
+
+                }
             }
-            .foregroundStyle(.purple)
         }
     }
 }
